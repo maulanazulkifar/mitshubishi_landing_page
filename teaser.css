@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+}
+.logo {
+  padding: 5px;
+  width: 45%;
+}
+.navigasi {
+  padding: 5px;
+  width: 50%;
+}
+.hamburger {
+  padding: 5px;
+  width: 5%;
+}
+.countdown {
+  display: block;
+  background-image: url(assets/countdown.png);
+  position: absolute;
+  width: 100%;
+  height: 700px;
+}
