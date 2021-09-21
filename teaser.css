@@ -1,28 +1,172 @@
-body {
-  margin: 0;
+html,body {
+  margin: 0px;
+  padding: 0px;
 }
-.navbar {
+nav {
   display: flex;
   background-color: black;
   color: white;
+  width: 100vw;
   height: 80px;
+  padding: 0px 10px 0px 10px;
+  box-sizing: border-box;
+  align-items: baseline;
 }
-.logo {
-  padding: 5px;
-  width: 45%;
+nav .logo {
+  flex-grow: 6;
 }
-.navigasi {
-  padding: 5px;
-  width: 50%;
+nav .logo img {
+  vertical-align: middle;
 }
-.hamburger {
-  padding: 5px;
-  width: 5%;
+nav .navigasi {
+  flex-grow: 5;
+  vertical-align: center;
 }
+nav .navigasi .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+nav .navigasi .dropdown .dropbtn i {
+  color: red;
+  font-size: 12px;
+}
+nav .navigasi a {
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+}
+nav .hamburger i {
+  font-size: 30px;
+  color: red;
+}
+
 .countdown {
-  display: block;
-  background-image: url(assets/countdown.png);
-  position: absolute;
-  width: 100%;
+  background-image: url('assets/countdown.png');
+  background-position: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+}
+.countdown #countdown_time {
+  color: white;
+  text-align: center;
+  font-family: MMC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 96px;
+  padding: 50px 0px 75px 0px;
+  flex-grow: 2;
+}
+.countdown .headline {
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+  padding-left: 100px;
+}
+.countdown .headline_button {
+  text-align: center;
+}
+.countdown .headline_button button{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 85px;
+  padding: 10px 30px 10px 30px;
+  margin: 20px;
+}
+.video {
+  background-image: url('assets/countdown.png');
+  background-position: center;
+  box-sizing: content-box;
   height: 700px;
+}
+.video div {
+  height: 100%;
+  text-align: center;
+  background: #222222;
+  opacity: 0.75;
+}
+.video div button {
+  margin-top: 350px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 85px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: white;
+  padding: 10px 30px 10px 30px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .socmed {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+.footer .socmed div {
+  padding: 20px;
+  align-items: center;
+}
+.footer .socmed div i{
+  font-size: 40px;
+  padding: 5px;
+}
+.footer .copyright {
+  text-align: center;
+}
+@media (max-width: 425px) {
+  nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    align-items: baseline;
+  }
+  nav .navigasi {
+    display: none;
+  }
+  .countdown #countdown_time {
+    color: white;
+    text-align: center;
+    font-family: MMC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 96px;
+    padding: 50px 0px 100px 0px;
+    flex-grow: 2;
+  }
+  .countdown .headline {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+    padding-left: 25px;
+  }
 }
