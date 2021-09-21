@@ -2,15 +2,21 @@ html,body {
   margin: 0px;
   padding: 0px;
 }
+@font-face {
+  font-family: 'MMC';
+  font-style: normal;
+  font-weight: normal;
+  src: local('MMC Regular'), url('assets/MMC Regular.woff') format('woff');
+}
 nav {
   display: flex;
   background-color: black;
   color: white;
-  width: 100vw;
   height: 80px;
   padding: 0px 10px 0px 10px;
   box-sizing: border-box;
   align-items: baseline;
+  font-family: MMC;
 }
 nav .logo {
   flex-grow: 6;
@@ -60,19 +66,20 @@ nav .hamburger i {
 .countdown #countdown_time {
   color: white;
   text-align: center;
-  font-family: MMC;
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 96px;
   padding: 50px 0px 75px 0px;
   flex-grow: 2;
+  font-family: MMC;
 }
 .countdown .headline {
   font-size: 32px;
   line-height: 40px;
   color: white;
   padding-left: 100px;
+  font-family: MMC;
 }
 .countdown .headline_button {
   text-align: center;
@@ -90,6 +97,7 @@ nav .hamburger i {
   border-radius: 85px;
   padding: 10px 30px 10px 30px;
   margin: 20px;
+  font-family: MMC;
 }
 .video {
   background-image: url('assets/countdown.png');
@@ -113,6 +121,7 @@ nav .hamburger i {
   letter-spacing: 0.5px;
   color: white;
   padding: 10px 30px 10px 30px;
+  font-family: MMC;
 }
 .footer {
   display: flex;
@@ -124,6 +133,10 @@ nav .hamburger i {
   flex-direction: column;
   padding: 50px;
   align-items: center;
+  font-family: MMC;
+}
+.footer .socmed p{
+  color: grey;
 }
 .footer .socmed div {
   padding: 20px;
@@ -135,6 +148,10 @@ nav .hamburger i {
 }
 .footer .copyright {
   text-align: center;
+  font-family: MMC;
+  margin-bottom: 30px;
+  color: grey;
+  font-size: 12px;
 }
 @media (max-width: 425px) {
   nav {
@@ -153,10 +170,9 @@ nav .hamburger i {
   .countdown #countdown_time {
     color: white;
     text-align: center;
-    font-family: MMC;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 96px;
     padding: 50px 0px 100px 0px;
     flex-grow: 2;
@@ -164,9 +180,42 @@ nav .hamburger i {
   .countdown .headline {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 40px;
     color: white;
     padding-left: 25px;
+  }
+  .countdown .headline img{
+    max-width: 100%;
+    height: auto;
+  }
+  .countdown .headline_button button{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 85px;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    font-family: MMC;
+  }
+  .footer .socmed div p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer .socmed div i{
+    font-size: 20px;
+    padding: 5px;
+  }
+  .footer .copyright {
+    text-align: center;
+    font-family: MMC;
+    margin-bottom: 30px;
+    color: grey;
   }
 }
